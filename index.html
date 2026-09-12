@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTREA - Independência Socioeconômica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO SUPERIOR -->
+  <header>
+    <div class="logo">
+      ✨ ASTREA
+      <span>Independência Socioeconômica</span>
+    </div>
+    <nav>
+      <button class="nav-btn active" onclick="showTab('inicio')">INÍCIO</button>
+      <button class="nav-btn" onclick="showTab('areas')">ÁREAS</button>
+      <button class="nav-btn" onclick="showTab('objetivo')">OBJETIVO</button>
+      <button class="nav-btn" onclick="showTab('documentos')">DOCUMENTOS</button>
+      <button class="nav-btn" onclick="showTab('passo-a-passo')">PASSO A PASSO</button>
+      <button class="nav-btn" onclick="showTab('checklist')">CHECKLIST</button>
+      <button class="nav-btn" onclick="showTab('fontes')">FONTES</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. INÍCIO -->
+    <section id="inicio" class="page-section active">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="hero-tag">MANUAL DIGITAL</span>
+          <h1>Sua autonomia começa com informação.⭐</h1>
+          <p>Um espaço criado para reunir informações sobre educação financeira, documentação, moradia, carreira, planejamento e tecnologia.</p>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 20px; color: var(--text-dark);">Encontre o que você precisa</h2>
+      
+      <div class="grid-areas">
+        <div class="area-card">
+          <h3>💰 Finanças</h3>
+          <p>Organização financeira, receitas, despesas e metas de autonomia.</p>
+          <button class="btn-card" onclick="showTab('passo-a-passo')">SAIBA MAIS →</button>
+        </div>
+        <div class="area-card">
+          <h3>📋 Documentação</h3>
+          <p>Documentos essenciais, emissão de 2ª via e organização de registros públicos.</p>
+          <button class="btn-card" onclick="showTab('documentos')">SAIBA MAIS →</button>
+        </div>
+        <div class="area-card">
+          <h3>🏠 Moradia</h3>
+          <p>Planejamento para aluguel, contrato, compra e organização dos custos.</p>
+          <button class="btn-card" onclick="showTab('checklist')">SAIBA MAIS →</button>
+        </div>
+        <div class="area-card">
+          <h3>💼 Carreira & Análise</h3>
+          <p>Capacitação, currículo, diagnóstico de perfil profissional e redes.</p>
+          <button class="btn-card" onclick="showTab('passo-a-passo')">SAIBA MAIS →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ÁREAS -->
+    <section id="areas" class="page-section">
+      <div class="guide-container">
+        <h2>🌐 Áreas de Atuação e Desenvolvimento</h2>
+        <p style="margin-bottom: 25px; color: var(--text-muted);">Explore os diferentes pilares suportados pela iniciativa ASTREA.</p>
+        
+        <div class="grid-areas">
+          <div class="area-card">
+            <h3>📈 Planejamento</h3>
+            <p>Organize decisões financeiras e metas pessoais antes de assumir novos compromissos.</p>
+          </div>
+          <div class="area-card">
+            <h3>💻 Tecnologia</h3>
+            <p>Serviços digitais, segurança cibernética, inclusão tecnológica e ferramentas úteis.</p>
+          </div>
+          <div class="area-card">
+            <h3>⚖️ Direitos & Proteção</h3>
+            <p>Acesso a redes de apoio social, direitos trabalhistas e proteção legal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OBJETIVO (ODS 5) -->
+    <section id="objetivo" class="page-section">
+      <div class="guide-container">
+        <div class="guide-header">
+          <h2>🎯 Objetivo do Projeto ASTREA — ODS 5</h2>
+        </div>
+        <p style="margin-bottom: 20px; line-height: 1.6;">
+          O ASTREA conecta **informação, tecnologia e autonomia socioeconômica** para promover o empoderamento das mulheres, alinhado com a Agenda 2030 das Nações Unidas.
+        </p>
+        
+        <div class="guide-grid">
+          <div class="guide-box">
+            <h4>🎯 Meta 5.5</h4>
+            <p>Garantir a participação plena e efetiva das mulheres e a igualdade de oportunidades para a liderança em todos os níveis de tomada de decisão.</p>
+          </div>
+          <div class="guide-box">
+            <h4>💻 Meta 5.b</h4>
+            <p>Aumentar o uso de tecnologias de informação e comunicação para promover o empoderamento feminino.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DOCUMENTOS -->
+    <section id="documentos" class="page-section">
+      <div class="guide-container">
+        <div class="guide-header">
+          <h2>📋 Guia Interativo: Documentos Necessários</h2>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-box">
+            <h4>📄 Documentos Pessoais</h4>
+            <ul>
+              <li>RG e CPF (ou Carteira Nacional de Identidade)</li>
+              <li>Certidão de Nascimento ou Casamento</li>
+              <li>Comprovante de Residência Atualizado</li>
+            </ul>
+          </div>
+          <div class="guide-box box-warning">
+            <h4>⚠️ Atenção</h4>
+            <p style="font-size: 0.9rem;">Mantenha sempre cópias digitais (PDF) salvas em um serviço de nuvem seguro (como Google Drive) para emergências.</p>
+          </div>
+          <div class="guide-box box-links">
+            <h4>🔗 Onde Buscar Oficial</h4>
+            <a href="https://www.gov.br" target="_blank" class="link-btn">Portal GOV.BR ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PASSO A PASSO + ANÁLISE PROFISSIONAL -->
+    <section id="passo-a-passo" class="page-section">
+      <div class="guide-container">
+        <div class="guide-header">
+          <h2>🪜 Passo a Passo: Desenvolvimento & Carreira</h2>
+        </div>
+        
+        <div class="guide-grid">
+          <div class="guide-box">
+            <h4>1️⃣ Mapeamento Profissional</h4>
+            <p style="font-size: 0.9rem;">Identifique suas competências atuais, experiências e objetivos de renda ou transição de carreira.</p>
+          </div>
+          <div class="guide-box">
+            <h4>2️⃣ Capacitação Contínua</h4>
+            <p style="font-size: 0.9rem;">Realize cursos gratuitos com certificação para atualizar seu currículo em áreas estratégicas.</p>
+          </div>
+          <div class="guide-box">
+            <h4>3️⃣ Presença Digital</h4>
+            <p style="font-size: 0.9rem;">Crie um perfil profissional atraente no LinkedIn e em redes de networking da sua área.</p>
+          </div>
+        </div>
+
+        <div class="analysis-card" style="margin-top: 30px; border: 1px solid #e2e8f0; background: #fafafa;">
+          <h3>💼 Dashboard de Diagnóstico Profissional</h3>
+          <p style="margin: 10px 0; color: var(--text-muted);">Plataformas recomendadas para análise, criação de portfólio e busca de vagas:</p>
+          
+          <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+            <a href="https://linkedin.com" target="_blank" class="link-btn" style="background: #0077b5;">LinkedIn (Rede & Perfil) ↗</a>
+            <a href="https://github.com" target="_blank" class="link-btn" style="background: #24292e;">GitHub (Projetos & Portfólio) ↗</a>
+            <a href="https://www.coursera.org" target="_blank" class="link-btn" style="background: #0056D2;">Coursera / Cursos ↗</a>
+          </div>
+        </div>
+
+        <div style="margin-top: 25px;">
+          <button class="btn-card" onclick="showTab('inicio')">🔙 Voltar para o início</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CHECKLIST -->
+    <section id="checklist" class="page-section">
+      <div class="guide-container">
+        <div class="guide-header">
+          <h2>✅ Checklist de Organização Financeira e Moradia</h2>
+        </div>
+
+        <div class="guide-grid">
+          <div class="guide-box">
+            <h4>💰 Planejamento Financeiro</h4>
+            <label class="checklist-item"><input type="checkbox"> Mapear todas as despesas fixas mensais</label>
+            <label class="checklist-item"><input type="checkbox"> Definir um teto de gastos para lazer</label>
+            <label class="checklist-item"><input type="checkbox"> Criar uma reserva de emergência gradual</label>
+          </div>
+
+          <div class="guide-box">
+            <h4>🏠 Preparação para Moradia</h4>
+            <label class="checklist-item"><input type="checkbox"> Guardar comprovantes de renda dos últimos 3 meses</label>
+            <label class="checklist-item"><input type="checkbox"> Verificar restrições no CPF (Serasa/SPC)</label>
+            <label class="checklist-item"><input type="checkbox"> Analisar contrato de locação com atenção às multas</label>
+          </div>
+
+          <div class="guide-box box-tip">
+            <h4>💡 Dicas Importantes</h4>
+            <ul>
+              <li>Nunca comprometa mais de 30% da renda com aluguel.</li>
+              <li>Revise suas assinaturas e tarifas bancárias desnecessárias.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FONTES -->
+    <section id="fontes" class="page-section">
+      <div class="guide-container">
+        <div class="guide-header">
+          <h2>🔗 Fontes de Informação Oficial</h2>
+        </div>
+
+        <div class="guide-grid">
+          <div class="guide-box box-links">
+            <h4>🏛️ Portais Oficiais</h4>
+            <ul>
+              <li><a href="https://www.gov.br/mulheres" target="_blank">Ministério das Mulheres (Brasil)</a></li>
+              <li><a href="https://brasil.un.org" target="_blank">ONU Brasil — ODS 5</a></li>
+              <li><a href="https://www.sebrae.com.br" target="_blank">Sebrae Delas (Empreendedorismo)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    ASTREA — Manual Digital de Independência Socioeconômica | Projeto de Pesquisa — MAP
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
